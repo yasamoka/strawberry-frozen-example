@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "strawberry-frozen-example"
+version = "0.1.0"
+description = ""
+authors = ["Ramzi Sabra <rms80@mail.aub.edu>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+strawberry-graphql = {git = "https://github.com/yasamoka/strawberry.git", rev = "frozen", extras = ["debug-server"]}
+sqlalchemy = "^2.0.0b3"
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^22.10.0" }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
